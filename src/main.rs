@@ -1,4 +1,5 @@
 use std::io;
+use std::time::{Duration, Instant};
 mod fib;
 
 fn main() {
@@ -12,6 +13,8 @@ fn main() {
 
         let mut input: String = String::new();
         io::stdin().read_line(&mut input).unwrap();
+
+        let now = Instant::now();
 
         let input_trim: &str = input.trim();
 
@@ -27,13 +30,19 @@ fn main() {
             continue;
         }
 
+
         println!("Your number is: {}", val);
 
         fib::fib(val);
 
+        let elapsed:Duration = now.elapsed();
+
         println!(" ");
 
+        println!("Calculation took: {:.2?}", elapsed);
+
         println!("Try another number or enter 'exit' and press enter to end the program.");
+
     
     }
 
