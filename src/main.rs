@@ -54,7 +54,7 @@ fn fib(n: i32) {
 
 
     if n <= 0 {
-        println!("Invalid Bibonacci Number.");
+        println!("Invalid Fibonacci Number.");
         return;
     }
 
