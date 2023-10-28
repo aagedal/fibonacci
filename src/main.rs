@@ -1,14 +1,12 @@
-use std::{io};
-
+use std::io;
+mod fib;
 
 fn main() {
 
     println!("Starting program.");
 
-    let x = true;
-
     //Main loop starts here. It gets an input from the user and checks if it is an integer.
-    while x == true {
+    loop {
 
         println!("Enter your number here:");
 
@@ -31,7 +29,7 @@ fn main() {
 
         println!("Your number is: {}", val);
 
-        fib(val);
+        fib::fib(val);
 
         println!(" ");
 

@@ -1,13 +1,12 @@
 use num_bigint::BigUint;
 use num_traits::One;
 
-
-fn fib(n: i32) {
+pub fn fib(n: i32) {
 
     println!("Calculating your Fibonacci number:");
 
-    if n >= 10001 {
-        println!("Number is too large! Max size is 10000. :'( ");
+    if n >= 32001 {
+        println!("Number is too large! Max size is 32000. :'( ");
         return;
     }
 
@@ -26,7 +25,9 @@ fn fib(n: i32) {
     let mut current: BigUint = One::one();
 
     println!("{}", previous);
+    println!(" ");
     println!("{}", current);
+    println!(" ");
 
     for _ in 2..n {
         let next: BigUint = previous + &current;
