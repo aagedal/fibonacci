@@ -11,7 +11,7 @@ fn main() {
         println!("Enter your number here:");
 
         let mut input: String = String::new();
-        io::stdin().read_line(&mut input);
+        io::stdin().read_line(&mut input).unwrap();
 
         let input_trim: &str = input.trim();
 
