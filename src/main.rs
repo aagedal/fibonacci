@@ -1,6 +1,6 @@
 use std::{io};
 use num_bigint::BigUint;
-use num_traits::{Zero, One};
+use num_traits::One;
 
 fn main() {
 
