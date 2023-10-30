@@ -5,4 +5,4 @@ Using the num-bigint crate it can calculate up to the 64000-th number in the Fib
 
 Error handles the user input and gives feedback. Option to try a new number or exit by writing 'exit'.
 
-Double click the .exe file on windows or the binary-file on macOS to start the program in the terminal.
+Double click the .exe file on Windows or the binary-file on macOS to start the program in the terminal.
